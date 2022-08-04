@@ -23,4 +23,10 @@ func main() {
 		j += 3
 	}
 
+	// for 4 - slices
+	x := []int{1, 11, 111, 111, 1111, 11111}
+	for i, v := range x {
+		fmt.Println(i, v)
+	}
+
 }
