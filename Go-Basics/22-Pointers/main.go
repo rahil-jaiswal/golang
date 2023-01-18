@@ -16,7 +16,7 @@ func main() {
 
 	*y++
 	fmt.Println(x)
-	foo(x)
+	foo(&x)
 }
 
 func foo(x *int) {

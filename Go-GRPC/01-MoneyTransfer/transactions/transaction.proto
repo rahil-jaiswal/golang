@@ -1,0 +1,33 @@
+
+
+syntax = "proto3";
+
+package transactions;
+
+option go_package = "./";
+
+
+message TransactionRequest {
+  string from = 1;
+  string to = 2;
+  float amount = 3;
+}
+
+message TransactionResponse {
+  bool transactionCompleted = 1;
+}
+
+message EnquiryRequest {
+  string from = 1;
+  string passcode = 2;
+}
+
+message EnquiryResponse {
+  float balance = 1;
+}
+
+
+service Transactions {
+  rpc MakeTransaction(TransactionRequest) returns (TransactionResponse) {}
+  rpc CheckBalance(EnquiryRequest) returns (EnquiryResponse) {}
+}

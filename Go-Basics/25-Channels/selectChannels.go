@@ -11,7 +11,7 @@ func main() {
 	go send(even, odd, quit)
 
 	//receive
-	receive(even, odd, quit)
+	Receive(even, odd, quit)
 
 	fmt.Println("exiting from main")
 }
@@ -30,7 +30,7 @@ func send(even, odd, quit chan<- int) {
 	close(quit)
 }
 
-func receive(even, odd, quit <-chan int) {
+func Receive(even, odd, quit <-chan int) {
 	for {
 		select {
 		case v := <-even:

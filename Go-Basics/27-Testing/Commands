@@ -1,0 +1,19 @@
+Remember the BET
+
+B - Benchmarking 
+E - Examples
+T - Testing
+
+for function Sum
+BenchmarkSum( t *testing.B)
+ExampleSum()
+TestSum(t *testing.T)
+
+
+##### Commands ####
+go test
+go test -bench .
+go test -cover .
+go test -coverprofile c.out
+go tool cover -html=c.out 
+godoc -http=:808

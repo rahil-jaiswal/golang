@@ -48,16 +48,4 @@ func main() {
 
 	fmt.Println(p3)
 
-	unsorted := []int{4, 7, 1, 2, 8, 3, 6, 9, 0}
-	fmt.Println(unsorted)
-	sort.Ints(unsorted)
-	fmt.Println(unsorted)
-
-	fmt.Println("-------------")
-
-	unsortedStrings := []string{"Raj", "Rahil", "Jeet", "Aashu", "Aryan", "Ayush"}
-	fmt.Println(unsortedStrings)
-	sort.Strings(unsortedStrings)
-	fmt.Println(unsortedStrings)
-
 }

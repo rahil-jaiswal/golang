@@ -34,6 +34,6 @@ func main() {
 		luxury: true,
 	}
 
-	fmt.Println(polo)
-	fmt.Println(tataTruck)
+	fmt.Println(polo.vehicle)
+	fmt.Println(tataTruck.vehicle)
 }

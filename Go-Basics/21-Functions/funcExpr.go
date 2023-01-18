@@ -10,7 +10,7 @@ func square(x int) {
 // can be passed as paramteter/argument
 // can be returned
 // can be assigned to variable
-// in all above case its an anonymous function
+// in all above case its an anonymous function 
 
 func main() {
 	// assigning a function to a variable

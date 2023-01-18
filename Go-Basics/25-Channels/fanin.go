@@ -10,7 +10,7 @@ func main() {
 	odd := make(chan int)
 	fanIn := make(chan int)
 
-	go send(even, odd)
+	go Send(even, odd)
 
 	go receive(even, odd, fanIn)
 
@@ -21,7 +21,7 @@ func main() {
 	fmt.Println("Exiting from main....")
 }
 
-func send(e, o chan<- int) {
+func Send(e, o chan<- int) {
 	for i := 0; i < 100; i++ {
 		if i%2 == 0 {
 			e <- i
